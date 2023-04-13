@@ -4,7 +4,7 @@
         ${msg("loginTitle",(realm.displayName!''))}
     <#elseif section = "header">
         <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"/>
-        <link href="${url.resourcesPath}/img/favicon.png" rel="icon"/>
+        <link href="${url.resourcesPath}/img/favicon.jpg" rel="icon"/>
         <script>
             function togglePassword() {
                 var x = document.getElementById("password");
@@ -20,11 +20,11 @@
         </script>
     <#elseif section = "form">
         <div>
-            <img class="logo" src="${url.resourcesPath}/img/alfresco-logo.svg" alt="Alfresco">
+            <img class="logo" src="${url.resourcesPath}/img/logo.png" alt="Alfresco">
         </div>
         <div class="box-container">
             <div>
-                <p class="application-name">Alfresco Identity Service</p>
+                <p class="application-name">${client.name}</p>
             </div>
         <#if realm.password>
             <div>
